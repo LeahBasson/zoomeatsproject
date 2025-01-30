@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Zoom Eats API</title>
+</head>
+<body>
+    <h2>API ENDPOINTS</h2>
+
+    <h2>Users Table</h2>
+
+<table>
+  <tr>
+    <th>HTTP Methods</th>
+    <th>Path</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/user</td>
+    <td>Retrieves a list of all users.</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/user/:id</td>
+    <td>Retrieves details of a specific user by ID.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/user/register</td>
+    <td>Add a new user.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/user/login</td>
+    <td>User is able to login.</td>
+  </tr>
+  <tr>
+    <td>PATCH</td>
+    <td>/user/:id</td>
+    <td>Updates details of a specific user by ID.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/user/:id</td>
+    <td>Removes a user account by ID.</td>
+  </tr>
+</table>
+
+<h2>Foods Table</h2>
+
+<table>
+  <tr>
+    <th>HTTP Methods</th>
+    <th>Path</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/hotel</td>
+    <td>Retrieves a list of all hotels.</td>
+  </tr>
+  <tr>
+    <tr>
+      <td>GET</td>
+      <td>/hotel/recent</td>
+      <td>Retrieves the 4 most recent products.</td>
+    </tr>
+    <tr>
+    <td>GET</td>
+    <td>/hotel/:id</td>
+    <td>Retrieves details of a specific hotel by ID.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/hotel/add</td>
+    <td>Add a new hotel</td>
+  </tr>
+  <tr>
+    <td>PATCH</td>
+    <td>/hotel/:id</td>
+    <td>Updates details of a specific hotel by ID.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/hotel/:id</td>
+    <td>Removes a hotel by ID.</td>
+  </tr>
+</table>
+
+<h2>Orders Table</h2>
+
+<table>
+  <tr>
+    <th>HTTP Methods</th>
+    <th>Path</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/user/:uid/bookings</td>
+    <td>Retrieves a list of all bookings.</td>
+  </tr>
+  <tr>
+      <td>GET</td>
+      <td>/user/:uid/booking</td>
+      <td>Retrieves all the bookings of a particular user.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/user/:uid/booking</td>
+    <td>A user is able to add a booking.</td>
+  </tr>
+  <tr>
+    <td>PATCH</td>
+    <td>/user/:uid/booking/:bookingID</td>
+    <td>An admin is able to update booking.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/user/:uid/booking/:bookingID</td>
+    <td>User is able to remove a single booking</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/user/:uid/bookings</td>
+    <td>User is able to remove all bookings</td>
+  </tr>
+</table>
+
+<h2>Stories Table</h2>
+
+<table>
+  <tr>
+    <th>HTTP Methods</th>
+    <th>Path</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/story</td>
+    <td>Retrieves a list of all reviews.</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/story/addStory</td>
+    <td>A user is able to add a review.</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/story/:id</td>
+    <td>Allows admin user to delete review.</td>
+  </tr>
+</table>
+    
+</body>
+</html>
