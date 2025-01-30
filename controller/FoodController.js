@@ -16,7 +16,7 @@ foodRouter.get('/recent', (req, res) => {
 })
 
 foodRouter.get ('/:id', (req, res) => {
-    foods.fetchFood(req, res)
+    foods.fetchFoodItem(req, res)
 })
 
 foodRouter.post('/add', verifyAToken, (req, res) => {

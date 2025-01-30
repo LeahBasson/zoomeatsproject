@@ -13,6 +13,7 @@
     text-align: center;
     font-family: "Poppins", sans-serif;
     margin-left: 1rem;
+    color: #1D1D1D;
 }
 
 h2{
@@ -25,13 +26,13 @@ table {
   width: 70%;
   margin-top: 1rem;
   font-family: "Poppins", sans-serif;
-  box-shadow: 1rem 2rem 2rem #FF9A00;
+  box-shadow: 1rem 2rem 2rem #FFE127;
  margin: auto;
  margin-bottom: 2rem;
 }
 
 td, th {
-  border: 2px solid #FF9A00;
+  border: 2px solid #F01500;
   text-align: left;
   padding: 8px;
   border-radius: 5rem;

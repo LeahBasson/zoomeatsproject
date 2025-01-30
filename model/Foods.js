@@ -33,13 +33,14 @@ class Foods {
             `
 
             db.query(strQry, (err, results) => {
-                if (err) throw new Error('Unable to retrieve recent foods')
+                if (err) throw new Error(err)
                 res.json({
                     status: res.statusCode,
                     results
             })
             })
         } catch(e) {
+            console.error('Error retrieving food item:', e);
             res.json({
                 status: 404,
                 err: e.message
@@ -50,11 +51,11 @@ class Foods {
     fetchFoodItem(req, res) {
             try{
                 const stryQry = `
-                SELECT hotelID, FoodID, ItemName, ItemDesc, Price, Category, image_url, quantity, prep_time_minutes
+                SELECT foodID, FoodID, ItemName, ItemDesc, Price, Category, image_url, quantity, prep_time_minutes
                 FROM Foods 
                 WHERE foodID = ${req.params.id};`
                 db.query(stryQry, (err, result) => {
-                    if (err) throw new Error('Issue when retrieving food item.')
+                    if (err) throw new Error(err)
                         res.json({
                        status: res.statusCode,
                        result: result[0]  //result for a single product 
