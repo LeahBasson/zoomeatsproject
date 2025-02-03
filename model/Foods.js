@@ -8,7 +8,7 @@ class Foods {
             `
     
             db.query(strQry, (err, results) => {
-                if (err) throw new Error(err)
+                if (err) throw new Error("Unable to retrieve food.")
                 res.json({
                     status: res.statusCode,
                     results //creates a key and assigns a value to it 
@@ -33,7 +33,7 @@ class Foods {
             `
 
             db.query(strQry, (err, results) => {
-                if (err) throw new Error(err)
+                if (err) throw new Error("Unable to retrieve food.")
                 res.json({
                     status: res.statusCode,
                     results
@@ -55,7 +55,7 @@ class Foods {
                 FROM Foods 
                 WHERE foodID = ${req.params.id};`
                 db.query(stryQry, (err, result) => {
-                    if (err) throw new Error(err)
+                    if (err) throw new Error("Unable to retrieve food item.")
                         res.json({
                        status: res.statusCode,
                        result: result[0]  //result for a single product 

@@ -27,7 +27,7 @@ foodRouter.patch('/:id', verifyAToken, (req, res) => {
     foods.updateFood(req, res)
 })
 
-foodRouter.delete('/:id', verifyAToken, (req, res) => { 
+foodRouter.delete('/:id', (req, res) => { 
     foods.deleteFood(req, res)
 })
 
